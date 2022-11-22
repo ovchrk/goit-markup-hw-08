@@ -1,3 +1,10 @@
+.activity {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+}
 .activity__section {
     padding-bottom: 94px;
 }
