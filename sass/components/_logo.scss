@@ -1,0 +1,20 @@
+.logo {
+    color: var(--brand-black-color);
+
+    text-decoration: none;
+    font-family: var(--font-logo);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.logo--blue {
+    color: var(--brand-color);
+}
+
+.logo--light {
+    display: inline-block;
+    margin-bottom: 20px;
+
+    color: var(--color-background);
+}
