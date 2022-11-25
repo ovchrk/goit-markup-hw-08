@@ -7,9 +7,18 @@
     width: 40px;
     height: 40px;
     cursor: pointer;
+    fill: black;
+
+    &:hover {
+        fill: var(--brand-color);
+    }
 
     @media screen and (max-width:767px) {
         display: inline-flex;
+        position: absolute;
+        top: 12px;
+        right: 0;
+        z-index: 3;
 
         
     }
@@ -18,7 +27,6 @@
     display: none;
     .mobile-menu-btn.is-open & {
         position: relative;
-        z-index: 3;
         display: block;
         width: 40px;
         height: 40px;
@@ -35,29 +43,30 @@
 }
 
 .mobile-menu__container {
-    display: flex;
-    flex-direction: column;
-    height: 100vw;
-    padding: 48px 40px 48px 40px;
+    height: 100%;
     background-color: var(--color-background);
 
     &.is-open {
-        display: block;
+        display: flex;
+        z-index:2;
     }
     @media screen and (max-width:767px) {
+        flex-direction: column;
+        padding: 48px 40px 48px 40px;
         display: none;
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        z-index: 1;
     }
     @media screen and (min-width:768px) {
         display: flex;
         width: 100%;
+        align-items: center;
     }
 }
 .mobile-menu__socials {
+    padding-top: 64px;
     display: flex;
     justify-content: center;
 

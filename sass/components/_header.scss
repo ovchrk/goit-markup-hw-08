@@ -1,8 +1,9 @@
 .header {
-    position: relative;
     border-bottom: 1px solid #ECECEC;
 }
 .header__nav {
+    position: relative;
     display: flex;
     align-items: center;
+    min-height: 60px;
 }

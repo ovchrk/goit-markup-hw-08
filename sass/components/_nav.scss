@@ -1,28 +1,28 @@
 .nav {
-    display: block;
-    
-    @media screen and (min-width:768px) {
-        display: flex;
-        
+    display: flex;
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+        gap: 35px;
     }
+
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        margin-left: 88px;    
-        margin-right: 96px;    
+        padding-right: 94px;
+        padding-left: 88px;      
     }
     @media screen and (min-width: 1200px) {
-        margin-left: 93px;  
+        padding-left: 93px;  
     }
 }
 
 .nav__item {
     @media screen and (max-width:767px) {
+        width: 100%;
         display: block;
-        &:not(:last-child) {
-            margin-bottom: 30px;
-        }
     }
 
     @media screen and (min-width:768px) {
+        display: inline-flex;
         &:not(:last-child) {
             margin-right: 50px;
         }

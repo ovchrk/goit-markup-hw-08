@@ -25,28 +25,31 @@
 
 .modal {
     position: relative;
+    min-width: 320px;
     max-width: 450px;
+    margin-right: auto;
+    margin-left: auto;
     height: 609px;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
-    transition: transform 250ms var(--timing-function),
-    scale 250ms var(--timing-function);
-
-    .modal__backdrop.is-hidden & {
-        transform: translate(-50%, -50%) scale(0.9);
-    }
 
     @media screen and (min-width: 768px) {
+        position: absolute;
+        z-index: 5;
+        top: 50%;
+        left: 50%;
+        transition: transform 250ms var(--timing-function),
+        scale 250ms var(--timing-function);
+        .modal__backdrop.is-hidden & {
+        transform: translate(-50%, -50%) scale(0.9);
+    }
+        transform: translate(-50%, -50%) scale(1);
         width: 450px;
         height: 609px;
     } 
     @media screen and (min-width: 1200px) {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(1);
         width: 528px;
         height: 581px;
     }    
@@ -63,6 +66,7 @@
     border-radius: 50%;
     background-color: var(--color-background);
     cursor: pointer;
+    z-index: 6;
     padding: 0;
     fill: #000000;
     transition: fill 250ms var(--timing-function);
