@@ -17,29 +17,56 @@
         <div class="container">
             <nav class="header__nav">
                 <a href="./index.html" class="logo"><span class="logo logo--blue">Web</span>Studio</a>
-                <ul class="social-links">
-                    <li class="social-links__item"><a href="./index.html" class="social-links__link social-links__link--current">Студія</a></li>
-                    <li class="social-links__item"><a href="./portfolio.html" class="social-links__link">Портфоліо</a></li>
-                    <li class="social-links__item"><a href="" class="social-links__link">Контакти</a></li>
-                </ul>
-                <ul class="contacts">
-                    <li class="contacts__item">
-                        <a href="mailto:info@devstudio.com" class="contacts__link">
-                            <svg width="16" height="12" class="contacts__icon">
-                                <use href="./images/symbol-defs.svg#envelope"></use>
-                            </svg>
-                            <span>info@devstudio.com</span>
-                        </a>
-                    </li>
-                    <li class="contacts__item">
-                        <a href="tel:+380961111111" class="contacts__link">
-                            <svg width="10" height="14" class="contacts__icon">
-                                <use href="./images/symbol-defs.svg#smartphone"></use>
-                            </svg>
-                            <span>+38 096 111 11 11</span>
-                        </a>
-                    </li>
-                </ul>
+                <button type="button" class="mobile-menu-btn is-open" data-menu-button>
+                    <svg 
+                    aria-label="Переключатель мобильного меню"
+                    aria-controls="menu-container"
+                    aria-expanded="false">
+                        <use href="./images/symbol-defs.svg#menu40px" width="40" height="40" class="mobile-menu-btn__icon-menu"></use>
+                        <use href="./images/symbol-defs.svg#close40px" width="40" height="40" class="mobile-menu-btn__icon-cross"></use>
+                    </svg>
+                </button>
+                <div class="mobile-menu__container is-open" id="menu-container" data-menu>
+                    <ul class="nav">
+                        <li class="nav__item"><a href="./index.html" class="nav__link nav__link--current">Студія</a></li>
+                        <li class="nav__item"><a href="./portfolio.html" class="nav__link">Портфоліо</a></li>
+                        <li class="nav__item"><a href="" class="nav__link">Контакти</a></li>
+                    </ul>
+                    <ul class="contacts">
+                        <li class="contacts__item">
+                            <a href="mailto:info@devstudio.com" class="contacts__link contacts__link--email">
+                                <svg width="16" height="12" class="contacts__icon">
+                                    <use href="./images/symbol-defs.svg#envelope"></use>
+                                </svg>
+                                <span>info@devstudio.com</span>
+                            </a>
+                        </li>
+                        <li class="contacts__item contacts__item--first">
+                            <a href="tel:+380961111111" class="contacts__link contacts__link--blue">
+                                <svg width="10" height="14" class="contacts__icon">
+                                    <use href="./images/symbol-defs.svg#smartphone"></use>
+                                </svg>
+                                <span>+38 096 111 11 11</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="mobile-menu__socials">
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__link">Instagram</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__link">Twitter</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__link">Facebook</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a class="mobile-menu__link">LinkedIn</a>
+                        </li class="mobile-menu__link">
+                    </ul>
+
+                </div>
+                
             </nav>
         </div>
     </header>
@@ -436,7 +463,7 @@
                         </li>
                         <li class="form__checkbox">
                             <label class="form__checkbox-label"> 
-                                <span>Погоджуюся з розсилкою та приймаю&ensp;</span>  
+                                <span class="form__checkbox-title">Погоджуюся з розсилкою та приймаю&ensp;</span>  
                                 <a href="" class="form__policy">Умови договору</a>
                                 <input type="checkbox" name="policy" class="form__checkbox-input">
                                 <span class="form__checkbox-icon"></span>
@@ -449,5 +476,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

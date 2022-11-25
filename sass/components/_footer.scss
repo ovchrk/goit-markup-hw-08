@@ -29,12 +29,16 @@
     margin-bottom: 60px;
 
     @media screen and (min-width: 768px) {
-        text-align: left;
+        width: 231px;
+        margin-right: auto;
+        margin-left: 76px;
         margin-bottom: 0;
     }
    
     @media screen and (min-width: 1200px) {
-        margin-right: 70px;    
+        text-align: left;
+        margin-right: 70px;
+        margin-left: 0;    
     }
 }
 .info {
@@ -80,10 +84,19 @@
     width: 100%;
     text-align: center;
     margin-bottom: 60px;
+    
+
+    @media screen and (min-width: 768px) {
+        width: 206px;
+        margin-right: 89px;
+        margin-left: auto;
+        
+        margin-bottom: 0;
+    }
 
     @media screen and (min-width: 1200px) {
         margin-right: 93px;
-        margin-bottom: 0;
+        margin-left: 0;
     }
 }
 .socials__title {
@@ -129,15 +142,26 @@
 .subscription__box {
     width: 100%;
 
+    @media screen and (min-width:768px) {
+        width: 450px;
+        align-items: baseline;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     @media screen and (min-width:1200px) {
         width: 570px;
-        align-items: baseline;
+        margin: 0;
     }
 }
 .subscription__form {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        padding-top: 60px;
+    }
 
     @media screen and (min-width:1200px) {
         align-items: flex-end;
