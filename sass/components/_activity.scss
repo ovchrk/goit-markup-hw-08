@@ -23,11 +23,9 @@
     position: relative;
 }
 .activity__thumb {
-    width: 370px;
+    width: 100%; /*370px*/
 }
-.activity__img {
-    width: 100%;
-}
+
 .activity__box {
     position: absolute;
     width: 100%;
