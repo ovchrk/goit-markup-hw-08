@@ -1,3 +1,4 @@
+/*BUTTON*/
 .mobile-menu-btn {
     display: none;
     margin: 0;
@@ -41,7 +42,7 @@
         display: none;
     }
 }
-
+/*container*/
 .mobile-menu__container {
     height: 100%;
     background-color: var(--color-background);
@@ -61,8 +62,13 @@
     }
     @media screen and (min-width:768px) {
         display: flex;
+        flex-direction: row;
         width: 100%;
         align-items: center;
+    }
+    @media screen and (min-width:1200px) {
+        align-items: baseline;
+        width: 100%;
     }
 }
 .mobile-menu__socials {

@@ -17,7 +17,7 @@
         <div class="container">
             <nav class="header__nav">
                 <a href="./index.html" class="logo"><span class="logo logo--blue">Web</span>Studio</a>
-                <button type="button" class="mobile-menu-btn is-open" data-menu-button>
+                <button type="button" class="mobile-menu-btn" data-menu-button>
                     <svg 
                     aria-label="Переключатель мобильного меню"
                     aria-controls="menu-container"
@@ -26,7 +26,7 @@
                         <use href="./images/symbol-defs.svg#close40px" class="mobile-menu-btn__icon-cross"></use>
                     </svg>
                 </button>
-                <div class="mobile-menu__container is-open" id="menu-container" data-menu>
+                <div class="mobile-menu__container" id="menu-container" data-menu>
                     <ul class="nav">
                         <li class="nav__item"><a href="./index.html" class="nav__link nav__link--current">Студія</a></li>
                         <li class="nav__item"><a href="./portfolio.html" class="nav__link">Портфоліо</a></li>
@@ -64,9 +64,7 @@
                             <a class="mobile-menu__link">LinkedIn</a>
                         </li class="mobile-menu__link">
                     </ul>
-
                 </div>
-                
             </nav>
         </div>
     </header>
@@ -127,7 +125,9 @@
                 <h2 class="section__title">Чим ми займаємось</h2>
                 <ul class="activity__list">
                     <li class="activity__item">
-                        <img src="images/img1.jpg" alt="Програми для ПК" width="370" height="294">
+                        <div class="activity__thumb">
+                            <img src="images/img1.jpg" alt="Програми для ПК" width="370" height="294">
+                        </div>
                         <div class="activity__box">
                             <p class="activity__text">
                                 Десктопні додатки
@@ -135,7 +135,9 @@
                         </div>  
                     </li>
                     <li class="activity__item">
-                        <img src="images/img2.jpg" alt="Додатки для смартфонів" width="370" height="294">
+                        <div class="activity__thumb">
+                            <img src="images/img2.jpg" class="activity__img" alt="Додатки для смартфонів" width="370" height="294">
+                        </div>
                         <div class="activity__box">
                         <p class="activity__text">
                             Мобільні додатки
@@ -143,7 +145,9 @@
                         </div>
                     </li>
                     <li class="activity__item">
-                        <img src="images/img3.jpg" alt="Дизайнерські рішення" width="370" height="294">
+                        <div class="activity__thumb">
+                            <img src="images/img3.jpg" alt="Дизайнерські рішення" width="370" height="294">
+                        </div>
                         <div class="activity__box">
                             <p class="activity__text">
                                 Дизайнерські рішення
@@ -159,7 +163,9 @@
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="team">
                     <li class="team__item">
-                        <img src="images/img4.jpg" alt="Ігор Дем'яненко" class="team__image">
+                        <div class="team__thumb">
+                            <img src="images/img4.jpg" alt="Ігор Дем'яненко" class="team__image">
+                        </div>
                         <div class="team__box">
                             <h3 class="team__title">Ігор Дем'яненко</h3>
                             <p class="team__position" lang="en">Product Designer</p>
@@ -195,7 +201,9 @@
                     
                     </li>
                     <li class="team__item">
-                        <img src="images/img5.jpg" alt="Ольга Рєпіна" class="team__image">
+                        <div class="team__thumb">
+                            <img src="images/img5.jpg" alt="Ольга Рєпіна" class="team__image">
+                        </div>
                         <div class="team__box">
                             <h3 class="team__title">Ольга Рєпіна</h3>
                             <p class="team__position" lang="en">Frontend Developer</p>
@@ -232,7 +240,9 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="images/img6.jpg" alt="Микола Тарасов" class="team__image">
+                        <div class="team__thumb">
+                            <img src="images/img6.jpg" alt="Микола Тарасов" class="team__image">
+                        </div>
                         <div class="team__box">
                             <h3 class="team__title">Микола Тарасов</h3>
                             <p class="team__position" lang="en">Marketing</p>
@@ -269,7 +279,9 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="images/img7.jpg" alt="Михайло Єрмаков" class="team__image">
+                        <div class="team__thumb">
+                            <img src="images/img7.jpg" alt="Михайло Єрмаков" class="team__image">
+                        </div>
                         <div class="team__box">
                             <h3 class="team__title">Михайло Єрмаков</h3>
                             <p class="team__position" lang="en">UI Designer</p>

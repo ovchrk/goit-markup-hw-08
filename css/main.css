@@ -138,6 +138,7 @@ ul {
   color: var(--color-background);
 }
 
+/*BUTTON*/
 .mobile-menu-btn {
   display: none;
   margin: 0;
@@ -180,6 +181,7 @@ ul {
   display: none;
 }
 
+/*container*/
 .mobile-menu__container {
   height: 100%;
   background-color: var(--color-background);
@@ -202,8 +204,15 @@ ul {
 @media screen and (min-width: 768px) {
   .mobile-menu__container {
     display: flex;
+    flex-direction: row;
     width: 100%;
     align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mobile-menu__container {
+    align-items: baseline;
+    width: 100%;
   }
 }
 
@@ -317,19 +326,18 @@ ul {
   .contacts {
     margin-top: auto;
     gap: 32px;
+    justify-content: flex-start;
   }
 }
 @media screen and (min-width: 768px) {
   .contacts {
-    align-items: center;
-    display: block;
+    justify-content: center;
     margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .contacts {
     flex-direction: row;
-    display: flex;
   }
 }
 
@@ -590,6 +598,14 @@ ul {
 .activity__item {
   max-width: 370px;
   position: relative;
+}
+
+.activity__thumb {
+  width: 370px;
+}
+
+.activity__img {
+  width: 100%;
 }
 
 .activity__box {
@@ -1298,7 +1314,6 @@ ul {
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    height: 581px;
   }
 }
 
@@ -1430,12 +1445,6 @@ ul {
   line-height: 1.16;
   letter-spacing: 0.03em;
 }
-@media screen and (min-width: 1200px) {
-  .form__checkbox-label {
-    font-size: 14px;
-    line-height: 1.71;
-  }
-}
 
 .form__checkbox-input {
   position: absolute;
@@ -1467,17 +1476,9 @@ ul {
 .form__checkbox-input:checked + .form__checkbox-icon {
   background-image: url(../images/icon-check.svg);
 }
-@media screen and (min-width: 1200px) {
-  .form__checkbox-icon {
-    top: 4px;
-    left: -26px;
-  }
-}
 
-@media screen and (max-width: 1199px) {
-  .form__checkbox-title {
-    padding-left: 8px;
-  }
+.form__checkbox-title {
+  padding-left: 8px;
 }
 
 .form__textarea {

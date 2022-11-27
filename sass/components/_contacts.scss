@@ -5,18 +5,16 @@
     @media screen and (max-width: 767px) {
         margin-top: auto;
         gap: 32px;
+        justify-content: flex-start;
     }
 
     @media screen and (min-width: 768px) {
-        align-items: center;
-        display: block;
+        justify-content: center;
         margin-left: auto;
     }
     
-
     @media screen and (min-width: 1200px) {
         flex-direction: row;  
-        display: flex;
     }
 
 }
