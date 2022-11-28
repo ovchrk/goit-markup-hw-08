@@ -9,8 +9,14 @@
 
 .team__section {
     background-color: #F5F4FA;
-    padding-bottom: 94px;
-    padding-top: 94px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
+    
 }
 
 .team__item {
@@ -64,6 +70,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
+
     letter-spacing: 0.03em;
     text-align: center;
     margin: 0 0 10px 0;

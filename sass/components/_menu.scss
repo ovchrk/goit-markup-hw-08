@@ -74,7 +74,7 @@
 .mobile-menu__socials {
     padding-top: 64px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 
     @media screen and (min-width:768px) {
         display: none;

@@ -38,18 +38,31 @@
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .section__title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   color: var(--brand-black-color);
+}
+@media screen and (min-width: 1200px) {
+  .section__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 html {
@@ -225,7 +238,7 @@ img {
 .mobile-menu__socials {
   padding-top: 64px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 @media screen and (min-width: 768px) {
   .mobile-menu__socials {
@@ -583,7 +596,6 @@ img {
 
 .advantages__text {
   display: block;
-  text-align: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -662,8 +674,14 @@ img {
 
 .team__section {
   background-color: #F5F4FA;
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .team__section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .team__item {
@@ -902,6 +920,7 @@ img {
 .info__item {
   display: block;
   text-align: center;
+  margin-bottom: 8px;
 }
 @media screen and (min-width: 1200px) {
   .info__item {
@@ -939,6 +958,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .socials__box {
+    text-align: left;
     margin-right: 93px;
     margin-left: 0;
   }
